@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>
+          Find Printer <span class="pull-right" (click)="dismiss()">Close</span>
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <!--  <div class="ion-padding">
+      <ion-input type="text" placeholder="My QR data" [(ngModel)]="qrData" placeholder="Car Number">
+      </ion-input>
+
+
+      <button ion-button full icon-left (click)="createCode()">
+          <ion-icon name="barcode"></ion-icon>Create
+      </button>
+      <button ion-button full icon-left (click)="scanCode()">
+          <ion-icon name="qr-scanner"></ion-icon>Scan Code
+      </button>
+
+      <ion-card *ngIf="createdCode">
+        <ngx-qrcode [value]="createdCode" style="width: 100%"></ngx-qrcode> 
+
+          <ion-card-content>
+              Value: {{ createdCode }}
+          </ion-card-content>
+      </ion-card>
+
+      <ion-card *ngIf="scannedCode">
+          <ion-card-content>
+              Result from scan: {{ scannedCode }}
+          </ion-card-content>
+      </ion-card>
+  </div>
+
+
+--> 
+<!-- 
+
+  <ion-list padding>
+    <button ion-button block (click)="startScanning()">scan</button>
+    <ion-list-header>
+        Paired Devices
+    </ion-list-header>
+    <ion-item *ngFor="let device of pairedDevices">
+        {{device.name}}
+    </ion-item>
+    <button ion-button block (click)="disconnect()">Disconnect</button>
+    <ion-list-header>
+        availlable Devices
+    </ion-list-header>
+    <ion-item *ngFor='let device of unpairedDevices'>
+        <span (click)="selectDevice(device.address)">
+      {{device.name}}
+    </span>
+    </ion-item>
+    <ion-spinner name="crescent" *ngIf="gettingDevices"></ion-spinner>
+    <ion-input placeholder="Metin" [(ngModel)]="metin"></ion-input>
+
+    <button ion-button block (click)="yazdir()">Yazdır</button>
+</ion-list>-->
+
+
+<ion-list>
+    <ion-item *ngFor="let item of bluetoothList" (click)="selectPrinter(item.id)">
+        {{item.name}} {{item.id}}
+    </ion-item>
+    </ion-list>
+
+
+    <div>
+        Selected Printer: {{selectedPrinter}}
+    </div>
+
+    <ion-button expand="full" color="danger"  (click)="listPrinter()">
+        Search Printer!
+    </ion-button>
+
+    
+
+
+
+   <!--  <ion-button expand="full" color="danger" *ngIf='selectedPrinter' (click)="printStuff()">
+    PRINT!
+    </ion-button>-->
+ 
+
+</ion-content>

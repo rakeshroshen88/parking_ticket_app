@@ -1,0 +1,225 @@
+<ion-header class="edithead">
+  <ion-toolbar>
+    <ion-title><img src="../../../../assets/img/back-arrrow.png" class="backbutton" alt="back Arrow"
+        (click)="CloseModal()" /> Update Profile </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+  <div class="editprofiletab">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Basic Info</a></li>
+      
+      <li><a data-toggle="tab" href="#menu2">Address </a></li>
+      <li><a data-toggle="tab" href="#menu1">Bank Details </a></li>
+    </ul>
+    <div class="">
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <div class="editprofilenew">
+
+
+            <div class="profile-sidebar">
+
+              <!--------------------------------------- upload image -------------------------------------------------------->
+ 
+              <!--------------------------------------- upload image ended -------------------------------------------------------->
+
+              <!-- SIDEBAR USERPIC -->
+              <div class="profile-userpic">
+                <div class="uploimg">
+                  <label for="uploadprofile"><i class="fa fa-camera" aria-hidden="true" (click)="selectImage()"></i></label>
+                  <input  id="uploadprofile" name="image_id" (change)="onFileChanged($event)"  /> 
+                  
+                </div>
+
+                <div class="profile-userpic" >
+
+                  <img src="https://iflex.ng/smni-api/img/{{userDetails111?.image_id}}" *ngIf="userDetails111.image_id && !imgURL"  class="img-responsive" alt="">
+                  <img src="{{imgURL}}" *ngIf="imgURL"  class="img-responsive" alt="">
+                  <img src="../../../../../assets/img/no-img.jpg"  *ngIf="!userDetails111.image_id" class="img-responsive"
+                    alt="">
+                </div> 
+              </div>
+              <!-- END SIDEBAR USERPIC -->
+              <!-- SIDEBAR USER TITLE -->
+
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-item no-padding>
+                      <ion-label position="floating">First Name</ion-label>
+                      <ion-input name="first_name" [(ngModel)]="userDetails111.first_name"></ion-input>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item no-padding>
+                      <ion-label position="floating">Last Name</ion-label>
+                      <ion-input name="last_name" [(ngModel)]="userDetails111.last_name"></ion-input>
+                    </ion-item>
+                  </ion-col>
+
+
+                  <ion-col size="12">
+                    <ion-item no-padding>
+                      <ion-label position="floating">Date of Birth</ion-label>
+                      <ion-datetime displayFormat="MM/DD/YYYY" min="1950-03-14" name="dob"
+                        [(ngModel)]="userDetails111.dob" max="2008-12-09" required #dataofbirth="ngModel">
+                      </ion-datetime>
+                    </ion-item>
+                  </ion-col>
+
+                  <ion-col size="12">
+                    <ion-item no-padding>
+                      <ion-label position="floating">Gender</ion-label>
+                      <ion-select placeholder="gender" [(ngModel)]="userDetails111.gender" required #gender="ngModel">
+                        <ion-select-option value="female">Female</ion-select-option>
+                        <ion-select-option value="male">Male</ion-select-option>
+                        <ion-select-option value="other">other</ion-select-option>
+                      </ion-select>  
+                    </ion-item>
+                  </ion-col>
+
+
+
+
+                </ion-row>
+              </ion-grid>
+
+
+              <!-- New Form-->
+
+              <!-- END MENU -->
+            </div>
+          </div>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <div class="editprofilenew">
+
+
+            <div class="profile-sidebar">
+
+
+              <ion-grid>
+                <ion-row>
+               
+                  <ion-col size="12">
+                    <ion-item no-padding>
+                      <ion-label position="floating">A/C number</ion-label>
+                      <ion-input name="website" [(ngModel)]="userDetails111.ac_number"></ion-input>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col size="12">
+                    <ion-item no-padding>
+                      <ion-label position="floating">A/C Name</ion-label>
+                      <ion-input name="website" [(ngModel)]="userDetails111.ac_name"></ion-input>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col size="12">
+                    <ion-item no-padding>
+                      <ion-label position="floating">Bank Name</ion-label>
+                      <ion-input name="website" [(ngModel)]="userDetails111.bank_name"></ion-input>
+                    </ion-item>
+                  </ion-col>
+
+                
+
+                  <ion-col size="12">
+                    <ion-item no-padding>
+                      <ion-label position="floating">Website</ion-label>
+                      <ion-input name="website" [(ngModel)]="userDetails111.website"></ion-input>
+                    </ion-item>
+                  </ion-col>
+
+
+
+                </ion-row>
+              </ion-grid>
+
+
+              <!-- New Form-->
+
+              <!-- END MENU -->
+            </div>
+          </div>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+
+
+          <div class="profile-sidebar">
+
+
+            <ion-grid>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-item no-padding>
+                    <ion-label position="floating">Address </ion-label>
+                    <ion-input name="address" [(ngModel)]="userDetails111.address"></ion-input>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="6">
+                  <ion-item no-padding>
+                    <ion-label position="floating">City</ion-label>
+                    <ion-input name="state" [(ngModel)]="userDetails111.city_id"></ion-input>
+                  </ion-item>
+                </ion-col>
+
+                <ion-col size="6">
+                  <ion-item no-padding>
+                    <ion-label position="floating">State</ion-label>
+                    <ion-input name="state" [(ngModel)]="userDetails111.state"></ion-input>
+                  </ion-item>
+                </ion-col>
+
+                <ion-col size="6">
+                  <ion-item no-padding>
+                    <ion-label position="floating">County</ion-label>
+                    <ion-input name="state" [(ngModel)]="userDetails111.country_id"></ion-input>
+                  </ion-item>
+                </ion-col>
+
+
+                <ion-col size="6">
+                  <ion-item no-padding>
+                    <ion-label position="floating">Zip Code</ion-label>
+                    <ion-input name="zip_code" [(ngModel)]="userDetails111.zip_code"></ion-input>
+                  </ion-item>
+                </ion-col>
+
+
+
+                <ion-col size="12">
+                  <ion-item no-padding>
+                    <ion-label position="floating">Mobile Number</ion-label>
+                    <ion-input name="mobileno" [(ngModel)]="userDetails111.mobile_no"></ion-input>
+                  </ion-item>
+                </ion-col>
+
+
+
+
+              </ion-row>
+            </ion-grid>
+
+
+            <!-- New Form-->
+
+            <!-- END MENU -->
+          </div>
+
+        </div>
+
+      </div>
+
+      <ion-button color="primary" expand="block" (click)="updateprofile()">Save Changes</ion-button>
+
+    </div>
+  </div>
+
+
+
+
+</ion-content>

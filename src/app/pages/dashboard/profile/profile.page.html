@@ -1,0 +1,132 @@
+<app-header></app-header>
+
+<ion-content>  
+  <!-- Back button with a default href -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="dashboard"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Profile</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<div class="profile-header-area space-pt--30 ">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+              <div class="profile-header">
+                  <div class="profile-header__image">
+                    <img *ngIf="!userdetails?.image_id" src="../../../../../assets/img/no-img.jpg" class="img-fluid" alt="banner" />
+                    <img *ngIf="userdetails?.image_id" src="https://iflex.ng/smni-api/img/{{userdetails?.image_id}}" class="img-fluid" alt="banner" />
+                    <!-- <img src="https://demo.hasthemes.com/rick-preview/rick/assets/img/profile.jpg" class="img-fluid" alt="" /> -->
+                  </div>
+                  <div class="profile-header__content">
+                      <h3 class="name space-mb--15  space-mt--0">{{userdetails?.first_name}} {{userdetails?.last_name}}</h3>
+                      <div class="profile-info space-mb--10">
+                          <div class="profile-info-block">
+                              <div class="profile-info-block__value">
+                                  MB 4350
+                              </div>
+                              <div class="profile-info-block__title">
+                                  ID  {{userdetails?.user_id}}
+                              </div>
+                          </div>
+                          <div class="profile-info-block">
+                              <div class="profile-info-block__value">
+                                  346 ($40)
+                              </div>
+                              <div class="profile-info-block__title">
+                                  Points
+                              </div>
+                          </div>
+                      </div>
+                      <div class="profile-level">
+                          <div class="profile-level__title">
+                            25% Profile Completed 
+                          </div>
+                          <div class="profile-level__progress progress">
+                              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="profile-body-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="profile-body">
+                  <div class="profile-info-table space-mb--40">
+                      <div class="profile-info-block">
+                          <div class="profile-info-block__title">Full Name</div>
+                          <div class="profile-info-block__value"> {{userdetails?.first_name}} {{userdetails?.last_name}}</div>
+                      </div>
+                      
+                      <div class="profile-info-block">
+                          <div class="profile-info-block__title">Phone</div>
+                          <div class="profile-info-block__value">{{userdetails?.mobile_no}}  </div>
+                      </div>
+                      <div class="profile-info-block">
+                          <div class="profile-info-block__title">E-mail Address</div>
+                          <div class="profile-info-block__value">{{userdetails?.email_id}} </div>
+                      </div>
+                      <div class="profile-info-block">
+                        <div class="profile-info-block__title">Gender</div>
+                        <div class="profile-info-block__value">{{userdetails?.gender}}</div>
+                    </div>
+
+                      <div class="profile-info-block">
+                          <div class="profile-info-block__title">Shipping Address</div>
+                          <div class="profile-info-block__value">{{userdetails?.address}} {{',' + userdetails?.city_id}} {{',' + userdetails?.state}} {{',' +  userdetails?.country_id}}</div>
+                      </div> 
+                      <div class="profile-info-block">
+                          <div class="profile-info-block__title">Edit Profile</div>
+                          <div class="profile-info-block__value">
+                              <a [routerLink]="['/','dashboard', 'profile' , 'edit_profile' ]">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16.523" height="15.333" data-inject-url="https://demo.hasthemes.com/rick-preview/rick/assets/img/icons/edit.svg" class="injectable">
+                                      <path
+                                          data-name="Path 1"
+                                          d="M14.606 9.145a.405.405 0 00-.394.416v3.693a1.218 1.218 0 01-1.182 1.248H1.971a1.218 1.218 0 01-1.183-1.248V2.414a1.218 1.218 0 011.183-1.252h3.5a.417.417 0 000-.832h-3.5A2.03 2.03 0 000 2.414v10.84a2.03 2.03 0 001.971 2.08h11.058A2.03 2.03 0 0015 13.254V9.562a.405.405 0 00-.394-.416zm0 0"
+                                      ></path>
+                                      <path
+                                          data-name="Path 2"
+                                          d="M15.546.481a1.867 1.867 0 00-2.5 0l-7.009 6.5a.359.359 0 00-.1.16l-.922 3.087a.347.347 0 00.1.355.414.414 0 00.383.094l3.327-.855a.4.4 0 00.173-.094l3.689-3.423 3.32-3.08a1.559 1.559 0 000-2.32zm-8.653 6.74l5.736-5.322 1.85 1.716L8.743 8.94zm-.37.688L8.001 9.28l-2.044.526zm8.928-5.2l-.417.387-1.85-1.717.417-.387a1.037 1.037 0 011.389 0l.461.428a.867.867 0 010 1.293zm0 0"
+                                      ></path>
+                                  </svg>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="profile-info-table">
+                      <div class="profile-info-block">
+                          <div class="profile-info-block__title">A/C Number</div>
+                          <div class="profile-info-block__value">{{userdetails?.ac_number}}</div>
+                      </div>
+                      <div class="profile-info-block">
+                          <div class="profile-info-block__title">A/C Name</div>
+                          <div class="profile-info-block__value">{{userdetails?.ac_name}}</div>
+                      </div>
+                      <div class="profile-info-block">
+                          <div class="profile-info-block__title">Bank Name</div>
+                          <div class="profile-info-block__value">{{userdetails?.bank_name}}</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+</ion-content>

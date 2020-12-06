@@ -1,0 +1,55 @@
+<ion-header class="edithead">
+  <ion-toolbar>
+    <ion-title><img src="../../../assets/img/back-arrrow.png" class="backbutton" alt="back Arrow"
+        (click)="CloseModal()" /> Parking Details </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+    <div class="tabledetails" *ngIf="userdetails"> 
+        <!--<div class="logoiconpar">
+          <img src="../../../assets/img/parking_car_icon.png" />
+          <h3>Parking Company Name</h3>
+
+          <h6 class="parkinghead">Parking Receipt</h6>
+          <h3 class="Intime">13:12:01 </h3>
+          <p class="date">01-02-2020</p>
+          <p class="carges">Charges: ₦50.00 </p>
+          
+        </div> -->  
+
+        <div class="logoiconpar">
+          <img src="../../../assets/img/parking_car_icon.png" />
+          <h3>Parking Company Name</h3>
+          <h5 class="carnumber">{{userdetails?.car_number }} </h5>
+
+          <h6 class="parkinghead">Parking Receipt</h6>
+          <h3 class="date">{{userdetails?.time_in  | date }} </h3>
+          <h3 class="Intime">In Time: {{userdetails?.time_in  | date:'shortTime' }} </h3>
+          <h3 class="Intime" *ngIf="userdetails?.time_out ">Out Time: {{userdetails?.time_out  | date:'shortTime' }} </h3> 
+          <p class="carges">Charges: ₦00.00 </p>
+          <p class="carges">Status: {{userdetails?.status }}   </p>
+
+        </div>
+
+        <div class="thanknodes">
+          <p>Thank you and drive Safaly</p>
+          
+          <div *ngIf="createdCode">
+            <ngx-qrcode [value]="createdCode" style="width: 100%"></ngx-qrcode>  
+          </div>
+
+
+        </div>
+        
+
+    </div>
+  </div>
+
+</ion-content>
+
+<div class="footer-btton"  *ngIf="userdetails ">
+  <button (click)="exit_car()" *ngIf="!userdetails?.time_out "><i class="fa fa-car" aria-hidden="true"></i> Mark as Exit</button>
+</div>

@@ -1,0 +1,163 @@
+<ion-content>
+
+  <div class="login-pages">
+    <div class="container">
+      <img src="../../../assets/img/short-logo.png" class="logo" alt="logo" />
+
+
+      <div class="login-tabs">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Login</a></li>
+         <!---<li><a data-toggle="tab" href="#menu1">Signup</a></li> --> 
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div class="loginbar">
+              <p>You Already have an account</p>
+              <form #logiform="ngForm">
+
+
+                <div class="form-loginsm">
+
+                  <div class="form-group">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <ion-input [(ngModel)]="userData.email_id" placeholder="User Email or Mobile number"
+                      name="email_id" required></ion-input>
+                  </div>
+
+                  <div class="form-group">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    <ion-input [(ngModel)]="userData.password" name="password" placeholder="Password" type="password" required>
+                    </ion-input>
+                  </div>
+
+                </div>
+                <a href="javascript:void(0)" [routerLink]="['/ForgotPassword']" class="forget-pass-href">Forgot
+                  Password?</a>
+
+                <div class="logins-btnsm">
+                  <button class="login-submit-btn" type="button" (click)="login()" [disabled]="logiform.invalid">Sign In </button>
+                  <!--<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-yahoo" aria-hidden="true"></i></a> -->
+
+                </div>
+
+
+
+              </form>
+
+
+            </div>
+
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <div class="loginbar">
+              <form #regiform="ngForm">
+                <div class="form-loginsm">
+
+                  <div class="form-group">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <ion-input [(ngModel)]="signup_data.first_name" placeholder="First Name" name="first_name" required #first_name="ngModel"></ion-input>
+                    
+                    <div class="form-control-feedback errormsg"
+                        *ngIf="first_name.errors && (first_name.dirty || first_name.touched)">
+                        <p *ngIf="first_name.errors.required">First Name is Required</p>
+                      </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <ion-input [(ngModel)]="signup_data.last_name" placeholder="Last Name"  name="last_name"></ion-input>
+
+
+                  </div>
+
+
+                  <div class="form-group">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <ion-input [(ngModel)]="signup_data.email_id" placeholder="User Email" name="email_id" required pattern="[^@]*@[^@]*" #email_id="ngModel"></ion-input>
+
+                    <div class="form-control-feedback errormsg"
+                        *ngIf="email_id.errors && (email_id.dirty || email_id.touched)">
+                        <p *ngIf="email_id.errors.required">Email is Required</p>
+                        <p *ngIf="email_id.errors.pattern">Invalid Email</p>
+                      </div>
+
+
+                  </div>
+
+                  <div class="form-group">
+                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                    <ion-input [(ngModel)]="signup_data.mobile_no" placeholder="Mobile number" name="mobile_no" required minlength="10" maxlength="10"  #mobile_no="ngModel" autocomplete="off"></ion-input>
+
+                    <div class="form-control-feedback errormsg"
+                            *ngIf="mobile_no.errors && (mobile_no.dirty || mobile_no.touched)">
+                            <p *ngIf="mobile_no.errors.required">Mobile Number is Required</p>
+                            <p *ngIf="mobile_no.errors.minlength">Min 10 Character is Required</p>
+    
+                          </div>
+
+                  </div>
+                  
+
+                  <div class="form-group">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    <ion-input [(ngModel)]="signup_data.password" name="password" placeholder="Password" type="password" required
+                    minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" #password="ngModel" autocomplete="off">
+                    </ion-input>
+
+                    <div class="form-control-feedback errormsg"
+                        *ngIf="password.errors && (password.dirty || password.touched)">
+                        <p *ngIf="password.errors.required">Password is Required</p>
+                        <!-- <p *ngIf="password.errors.minlength">Min 10 Character is Required</p> -->
+                        <p *ngIf="password.errors.pattern || password.errors.minlength">Error: one number and one
+                          uppercase and lowercase letter, and at least 8 or more characters</p>
+                      </div>
+
+
+                  </div>
+
+                </div>
+                 
+
+                <div class="logins-btnsm">
+                  <button class="login-submit-btn" type="button" (click)="signup()" [disabled]="regiform.invalid">Sign Up </button>
+                  <!--<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-yahoo" aria-hidden="true"></i></a> -->
+
+                </div>
+
+
+
+              </form>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <div class="bottom-loging">
+
+      <p> This SMNI app is used by our Vendors </p>
+    </div>
+
+
+
+
+  </div>
+
+
+
+</ion-content>

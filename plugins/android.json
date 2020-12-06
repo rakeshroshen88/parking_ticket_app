@@ -1,0 +1,54 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-bluetooth-serial": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "io.parking_app.starter"
+    },
+    "cordova-plugin-bluetooth-printer": {
+      "PACKAGE_NAME": "io.parking_app.starter"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div *ngFor="let datum of allData">
+      <span>{{ datum.item_name }} / Item ID #{{ datum.item_id }}</span>
+      <select style="display: block" [formControlName]="datum.item_id">
+        <option *ngFor="let group of allDataGroups" [value]="group.group_id">
+          {{ group.display_name }}
+        </option>
+      </select>
+      <button>Assign Group</button>
+    </div>
+  </form>
+</div>

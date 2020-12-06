@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="container">
+    <div class="dashborard-icon">
+      <h3>Welcome {{userdetails?.first_name}} {{userdetails?.last_name}} <span class="pull-right" (click)="find_blutooth()"><span *ngIf="selectedPrinter">  {{selectedPrinter}}</span> <span *ngIf="!selectedPrinter">Find Printer</span>  </span> </h3>
+
+      <div class="ion-padding">
+        <form #regiform="ngForm">
+          <ion-input type="text" placeholder="My QR data" [(ngModel)]="qrData" name="qrData1" placeholder="Car Number" requied #qrData1="ngModel">
+          </ion-input>
+          <button [disabled]="regiform.invalid"  (click)="createCode()">
+            Create Ticket
+          </button>
+
+          <button ion-button full icon-left (click)="scanCode()">
+           Scan Code
+          </button>
+
+        </form>
+
+        
+
+
+        <ion-card *ngIf="createdCode">
+          <ngx-qrcode #parent [value]="createdCode"   style="width: 100%"></ngx-qrcode>
+
+          <ion-card-content> 
+            <button class="print-btn" (click)="printStuff(parent)">Print Receipt</button>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+</ion-content>

@@ -1,0 +1,1111 @@
+ul,li{padding:0px; list-style: none;}
+
+.login-pages {
+    background-image: url(../img/SMNI_background.png);
+    min-height: 100%;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+
+.login-pages img.logo {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+
+.form-loginsm ion-item{margin: 10px 0;}
+.form-loginsm{}
+.form-loginsm{}
+.form-loginsm ion-input {
+    background: #fff;
+    text-align: left;
+    padding: 0px 26px;
+    border-radius: 5px;
+}
+
+.form-loginsm ion-input input {
+    padding: 8px 0px 8px 30px !important;
+}
+
+.form-loginsm .form-group i {
+    position: absolute;
+    left: 10px;
+    z-index: 9;
+    top: 11px;
+}
+
+.form-loginsm .form-group {
+    position: relative;
+}
+
+.login-tabs li.active a {
+    background: #ff21fe !important;
+    border: 1px solid #ff21fe !important;
+    color: #fff !important; 
+}
+.login-tabs li a {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #787878;
+    border-radius: 4px;
+    padding: 4px 30px;
+}
+
+.login-tabs ul.nav.nav-tabs {
+    margin-bottom: 10px;
+    border-bottom: 0;
+    margin-top: 20px;
+}
+
+
+.login-tabs ul.nav.nav-tabs li {
+    float: none;
+    display: inline-block;
+    margin: 3px 2px;
+}
+
+
+a.forget-pass-href {
+    text-align: right;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+}
+
+.logins-btnsm button.login-submit-btn {
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    color: #fff;
+    background: #ff21fe;
+}
+
+.logins-btnsm {
+    margin-top: 20px;
+}
+
+.loginbar p {
+    color: #e4e4e4;
+    text-align: left;
+    font-size: 12px;
+}
+
+.loginbar {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+.login-pages p {
+    color: #fff; 
+}
+
+
+
+
+.bottom-loging {
+    clear: both;
+    margin-top: 15px;
+    font-size: 11px;
+   
+}
+.bottom-loging p{ color: #7f7f7f;}
+.bottom-loging p {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+.header {
+    background:url('../img/SMNI_background.png');
+    --background:url('../img/SMNI_background.png');
+    background-size: 100%;
+    background-position: 0 -26px;
+     
+}
+
+.header img {
+    max-width: 100px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.header ion-title {
+    padding: 0;
+}
+
+.sc-ion-buttons-md-h{color: #fff;}
+.dashborard-icon ul li {
+    display: inline-block;
+    width: 50%;
+    padding: 7px 5px;
+}
+
+.dashborard-icon ul li:nth-child(odd){padding-left: 0;}
+.dashborard-icon ul li:nth-child(even){padding-right: 0;}
+
+.user-head-icon {
+    float: right;
+    padding: 6px 20px;
+}
+.user-head-icon i.fa.fa-user {
+    background: #e5e5e5;
+    color: #f50000;
+    display: block;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.menuhead-logo {
+    background: url(../img/SMNI_background.png);
+    --background: url(../img/SMNI_background.png);
+    background-size: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+.sidemanu_content {
+    --padding: 0 !important;
+    --offset-bottom: 0 !important;
+    --offset-top: 0 !important;
+    --padding-bottom: 0 !important;
+    --padding-end: 0 !important;
+    --padding-start: 0 !important;
+    --padding-top: 0 !important;
+} 
+
+.menuhead-logo img {
+    max-width: 130px;
+    margin: auto;
+    text-align: center;
+    margin: 22px 0;
+}
+.menuhead-logo ion-note {
+    margin: 0 !important;
+    padding-top: 16px;
+    color: #fff !important;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.sidemanu_content ion-list{    padding: 0 !important;}
+.dashborard-icon h3 {
+    font-size: 16px;
+} 
+.form-control-feedback.errormsg p{
+    color: red;
+    margin: 0 !important;
+    line-height: 16px;
+    padding: 4px 0 0 0;
+
+}
+
+.form-control-feedback.errormsg {
+    left: 0;
+    right: initial;
+    width: 100%;
+    /* bottom: 100%; */
+    top: 100%;
+    position: relative;
+    height: initial;
+}
+
+
+.logins-btnsm button.login-submit-btn[disabled] {
+    background: #ccc;
+}
+.usersidebarname{    color: #fff;
+    margin: 0;
+    text-transform: capitalize;
+    margin-top: 10px;;}
+
+    .undercontruction img {
+        margin-top: 50px;
+        max-width: 148px;
+        margin-bottom: 50px;
+    }
+    .undercontruction p {
+        font-weight: bold;
+    }
+ 
+    ion-back-button {
+        --max-height: 20px;
+        height: 15px;
+        font-size: 9px;
+        --icon-font-size: 17px;
+        --color:#353535cc;
+    }
+
+    .row.titlerow {
+        background: #010195;
+        color: #fff; 
+    }
+
+    .title-qiz h3 {
+        font-size: 15px;
+    }
+    
+
+    .pd6{padding: 0 !important;}
+
+    .title-qiz-img:first-child {
+        border-right: 2px solid #fff;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+    }
+
+    .title-qiz-img:last-child {
+        border-left: 2px solid #fff;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+    }
+
+
+
+    .quiz-list li {
+        width: 100%;
+        margin-left: 0px;
+
+    }
+
+
+    .quiz-list li { 
+
+        float: left;
+        margin: 0 0 20px 0%;     
+        background: #edf6fa;
+        border-radius: 0 0 5px 5px;
+
+    }
+
+    .quiz-list {
+        margin-left: 0px;
+    }
+
+
+    .quiz-list .q-pic {
+        text-align: center;
+        background: rgba(0,0,0,0.2);
+    }
+    .q-pic { 
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .q-pic img {
+        transition: all 0.3s ease 0s;
+    }
+
+
+    .quiz-description {
+        min-height: 0px;
+    }
+    .quiz-description { 
+        font-size: 0.929em;
+        padding: 10px;
+    }
+
+
+    .quiz-list h3 {
+        font-size: 1.3em;
+    }
+    .quiz-list h3 { 
+        
+        margin-bottom: 10px;
+    overflow: hidden;
+    margin-top: 2px;}
+
+
+    .quiz-period {
+        padding-bottom: 10px;
+    }
+
+    .start-time, .end-time, .ques-info, .quiz-rewards {
+        color: #787878;
+    }
+    .start-time {
+        padding-bottom: 5px;
+    }
+
+
+    .start-time span {
+        color: #288507;
+    }
+
+
+    .end-time span {
+        color: #854207;
+    }
+
+
+    .ques-info {
+        border-top: 1px solid #ccc;
+        padding-top: 7px;
+    }
+
+
+    .ques-info strong {
+        color: #000;
+    }
+
+
+    .quiz-rewards {
+        line-height: 2;
+    }
+
+
+    .quiz-rewards span {
+        color: #e3325b;
+    }
+
+
+    .quiz-btn {
+        width: auto;
+    }
+    .quiz-btn {
+        padding: 7px 15px;
+        border-radius: 3px;
+        text-align: center;
+        display: inline-block;
+        color: #7a1132;
+        border: 1px solid #e3325b;
+        margin-top: 15px;
+        width: 125px;
+        position: relative;
+    }
+
+
+
+    .box-quiz {
+        background: #292828;
+        margin-top: 12px;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+
+    .box-workding p {
+        color: #aeaeae;
+        font-size: 11px;
+    }
+
+    .wrap-block {
+        padding: 10px 0 0px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+
+    .wrap-block {
+        margin-bottom: 15px;
+    }
+
+    .innerquiz-left {
+        width: 100%;
+        padding: 0px;
+        border: 1px solid #d2d2d2;
+    }
+
+    .quiz-score {
+        background-color: #14264f;
+        padding: 6px 5px 10px;
+    }
+
+
+    .quiz-score ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    .quiz-score ul li {
+        width: 31.3%; 
+        margin: 0 5px 10px;
+        float: none;
+        display: inline-block;
+    }
+
+
+    .quiz-score ul li {
+        margin: 0 15px 15px 0;
+        font-size: 12px;
+    }
+
+
+    .quiz-score ul li {
+        float: left; 
+        padding: 14px 0;
+        text-align: center; 
+
+        margin: 0 1% 10px;
+        background: #2c498d;
+        color: #fff;
+    }
+
+    .quiz-score ul li > h2 {
+        font-weight: 600;
+        font-size: 19px;
+        margin: 0;
+    }
+
+
+    .ins_title {
+        text-align: center;
+        color: #fff;
+        font-size: 0.857em;
+        clear: both;
+        text-transform: uppercase;
+      
+    }
+
+
+    .ins_title strong {
+        font-weight: 400;
+    }
+
+
+    .instruction_block, .grid-holder p, .about_quiz li, .grid-holder .quiz_condition p, .fixed-menu li, .wpProQuiz_listItem > span {
+        font-size: 12px;
+    }
+
+
+    .instruction_block ol, .instruction_block ul {
+        list-style: disc;
+        margin: 0 0 15px 15px;
+        padding: 10px;
+    }
+
+
+    .instruction_block li {
+        margin-bottom: 5px;
+        list-style: disc;
+    }
+
+
+    .innerquiz-text {
+        color: #135F54;
+        font-size: 87.5%;
+    }
+
+
+    .quiz-button {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+
+    .innerquiz-text .quiz-button a {
+        display: block;
+        width: 100%;
+        background: #1d3a7c;
+        font-weight: 400;
+        text-align: center;
+        padding: 12px 15px;
+        color: #fff;
+        border-radius: 2px;
+    } 
+
+    .quiz-score ul li+li {
+        background: #1f8cbe;
+    }
+
+
+    .quiz-score ul li+li+li {
+        background: #15c4b1;
+    }
+
+    
+
+    .pagetitle {
+        font-size: 15px;
+    }
+
+
+    .sing-qutestion {
+        background: #10162b;
+        height: 100%;
+        color: #fff;
+    }
+
+
+
+
+    .sing-qutestion .signestion-title {
+        margin: 30px 0;
+    }
+    .sing-qutestion .signestion-title h4 {
+        color: #6a6a6a;
+        font-size: 15px;
+        margin: 0;
+    }
+    .sing-qutestion .signestion-title h3 {
+        font-weight: bold;
+        color: #ccc;
+    }
+    .sing-qutestion .signestion-title h3 span {
+        font-weight: normal;
+        font-size: 14px;
+        color: #6e6e6e;
+        padding-left: 3px;
+    }
+
+
+
+
+    .signestion-title ul {
+        display: flex;
+    }
+
+
+    .signestion-title ul li {
+        height: 2px;
+        width: 100%;
+        background: #979797;
+        margin-right: 4px;
+    }
+
+    .signestion-title ul li.answer-given{
+        background: #13c113;
+    }
+
+    .signestion-title ul li:nth-child(7){
+        background: #df0808;
+        
+    }
+
+    .signestion-title ul li:nth-child(8){
+        background: #fff;
+        
+    }
+
+    .questionbody {
+        color: #ccc;
+    }
+
+    .questionbody .question_option .form-group label {
+        width: 100%; 
+        border: 2px solid #5d5d5d;
+        padding: 8px;
+        border-radius: 10px;
+        font-weight: normal;
+        text-transform: capitalize;
+    }
+
+    .questionbody .question_option .form-group input[type='radio']{
+        display: none;
+    }
+    .questionbody .question_option .form-group label p {
+        width: 100%;
+    }
+
+
+    .questionbody .question_option .form-group input[type='radio']:checked ~ label {
+        border-color: #02cea2;  
+        color: #02cea2;
+    }
+
+
+    .questionbody .question_option .form-group input[type='radio']:checked ~ label .checkmark {
+        border-color: #02cea2;
+        background: #02cea2;
+    }
+
+
+    .questionbody .question_option .form-group input[type='radio']:checked ~ label  .checkmark:before {
+        content: "\f00c";
+        font: normal normal normal 14px/1 FontAwesome;
+        color: #fff;
+        font-size: 9px;
+        padding: 3px;
+        position: absolute;
+    }
+
+    .question_option {
+        margin: 40px 0 0 0;
+    }
+
+
+
+    .questionbody .question_option .form-group input[type='radio']:checked ~ label {
+       
+    }
+    .questionbody .question_option .form-group .checkmark {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        display: inline-table;
+        float: right;
+        overflow: hidden;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .footerof-qeustion{    background: #10162b; color: #fff;}
+    .footerof-qeustion .buton-quite button {
+        background: none;
+        font-size: 13px;
+        padding: 16px 0;
+        color: #ccc;
+        margin-top: 6px;
+    }
+
+    .footerof-qeustion .next-quite button {
+        font-size: 13px;
+        padding: 13px 0;
+        color: #fff;
+        background: #06cff2;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+    .qize-result {
+        background: #10162b;
+        color: #fff;
+        text-align: center;
+        height: 100%;
+    }
+
+    .reusltforqueize h3 {
+        font-size: 15px;
+        margin: 24px 0 50px;
+    }
+
+
+    .reusltforqueize img {
+        max-width: 150px;
+    }
+
+
+    .reusltforqueize p {
+        font-size: 12px;
+        color: #ccc;
+    }
+
+    .scorpane h5 {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 11px;
+        color: #7f7f7f;
+    }
+
+
+    .scorpane h6 {
+        font-size: 31px;
+        color: #51e882;
+        font-weight: bold;
+    }
+
+    .scorpane h6 span {   color: #fff;    }
+
+    .scorpane button {
+        background: #36e0f4;
+        color: #000;
+        padding: 16px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    #wizard{}
+    #wizard .tab{display: none;}
+    #wizard .tab.active{display: block;}
+    #wizard{}
+
+    #wizard ul.steps-indicator {
+        display: flex;
+    }
+
+    ul.steps-indicator li {
+        height: 2px;
+        width: 100%;
+        background: #979797;
+        margin-right: 4px;
+        font-size: 0;
+    }
+
+    ul.steps-indicator li.done {
+        background: #13c113;
+    }
+
+    button.nebts {
+        font-size: 13px;
+        padding: 13px 0;
+        color: #fff;
+        background: #06cff2;
+        width: 50%;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        margin-top: 10px;
+        float: right;
+    }
+    .question-form.basicnotic {
+        padding: 20px 0;
+    }
+
+
+    /*************************************** profile ******************************************/
+    .space-pt--30 {
+        padding-top: 30px;
+    }
+    .space-mb--40 {
+        margin-bottom: 40px;
+    }
+
+
+    .profile-header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+
+    .profile-header__image {
+        -webkit-flex-basis: 120px;
+        -ms-flex-preferred-size: 120px;
+        flex-basis: 120px;
+        margin-right: 15px;
+    }
+
+
+    .profile-header__image img {
+        border-radius: 15px;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .profile-header__content {
+        -webkit-flex-basis: calc(100% - 135px);
+        -ms-flex-preferred-size: calc(100% - 135px);
+        flex-basis: calc(100% - 135px);
+    }
+    .space-mt--10 {
+        margin-top: 10px;
+    }
+
+
+    .profile-header__content .name {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .space-mb--15 {
+        margin-bottom: 15px;
+    }
+
+
+    .profile-header .profile-info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 200px;
+        max-width: 100%;
+    }
+    .space-mb--10 {
+        margin-bottom: 10px;
+    }
+
+    .profile-header .profile-info-block {
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+
+
+    .profile-header .profile-info-block__value {
+        font-size: 12px;
+        font-weight: 700;
+        color: #06142d;
+    }
+
+
+    .profile-header .profile-info-block__title {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .profile-header .profile-info-block {
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+
+    .profile-header .profile-level__title {
+        font-size: 12px;
+        font-weight: 500;
+        color: #06142d;
+    }
+
+    .profile-header .profile-level__progress {
+        height: 4px;
+        background-color: rgba(145, 145, 161, 0.1);
+    }
+
+
+    .profile-header .profile-level__progress .progress-bar {
+        background-color: #f73c1b;
+    }
+
+
+
+
+    .profile-info-table {
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    .space-mb--40 {
+        margin-bottom: 40px;
+    }
+
+
+    .profile-info-table .profile-info-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 15px 30px;
+        color: #06142d;
+        border-bottom: 2px solid #f1f1f1;
+    }
+
+
+    .profile-info-table .profile-info-block__title {
+        font-size: 14px;
+        font-weight: 500;
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+
+
+    .profile-info-table .profile-info-block__value {
+        font-size: 12px;
+        font-weight: 300;
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        text-align: right;
+    }
+
+    .space-mt--0{margin-top: 0;}
+
+  
+    .editprofiletab ul.nav.nav-tabs {
+        background: #ff9000;
+    }
+
+
+    .editprofiletab ul.nav.nav-tabs li.active a {
+        background: none;
+        border: none;
+        border-bottom: 4px solid #fff;
+    }
+    .editprofiletab ul.nav.nav-tabs a {
+        padding: 5px 15px;
+        color: #fff;
+        text-align: center;
+        display: block;
+    }
+
+
+
+    .profile-sidebar {
+        padding: 20px 0 10px 0;
+        background: #fff;
+        position: relative;
+    }
+
+
+    .profile-userpic {
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .uploimg {
+        position: absolute;
+        z-index: 99999;
+        right: 0;
+    }
+
+    #uploadprofile {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+
+
+    .profile-userpic {
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .profile-userpic img {
+        float: none;
+        margin: 0 auto;
+        width: initial;
+        min-height: 100px;
+        max-width: inherit;
+        max-width: 100px;
+    }
+
+
+
+
+    .edithead ion-toolbar img {
+        filter: invert(2);
+    }
+    .backbutton {
+    }
+    .backbutton {
+    }
+    .backbutton {
+        margin-right: 6px;
+        width: 26px;
+    }
+
+    .user-head-icon:focus {
+    outline: none;
+}
+
+.edithead ion-toolbar{--background: #010195; background: #010195; color:#fff;}
+.tabledetails {
+    text-align: center;
+}
+
+.tabledetails {
+    text-align: center;
+}
+.logoiconpar {
+    margin-top: 42px;
+}
+
+.logoiconpar img {
+    max-width: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logoiconpar h3 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.logoiconpar h6.parkinghead {
+    border-top: 3px dotted #ccc;
+    border-bottom: 3px dotted #ccc;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+.logoiconpar h3.Intime {
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+
+.logoiconpar p.carges {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 3px dotted #ccc;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+
+
+
+.thanknodes p {
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+
+.footer-btton button {
+    background: #ccc;
+    width: 94%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
+    background: #ca2727;
+    color: #fff;
+}
+
+
+.footer-btton {
+    text-align: center;
+}
+
+
+.qrcode img {
+    width: 100%;
+}
+button.print-btn {
+    background: #39b819 !important;
+    width: 100% !important;
+    padding: 10px;
+    border-radius: 3px !important;
+    color: #fff;
+}
+
+
+.dashborard-icon input[type="text"] {
+    background: none;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 13px;
+    margin-bottom: 15px;
+}
+
+
+.dashborard-icon button {
+    width: 48%;
+    margin: 1%;
+    padding: 10px;
+    background: #f5710c;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.dashborard-icon button:nth-child(3){background: #31fc44;}
+
+.header img{}
